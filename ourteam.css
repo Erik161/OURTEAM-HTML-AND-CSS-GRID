@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body{
+    font-family: 'PoynterOSDisp', Bold; 
+    color: #354463;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*ADD SPACE*/
+.agregar-espacio{
+    margin-top: 100px;
+}
+
+/*STYLE TITLE */
+h1{
+    text-align: left;
+    font-size: 35px;
+    color: #ffff;
+    text-align: center;
+}
+.rectangule1{
+    width: 300px;
+    height: 50px;
+    background-color: #354463;
+}
+h3{
+    text-align: left;
+    font-weight: bold;
+    font-family: PoynterOSDisp;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    padding: 5px;
+    font-size: 50px;
+}
+
+.parrafo-principal{
+    font-family: Komet;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #354463;
+}
+
+
+
+/*STRUCTURE OF PRESENTATION CARDS */
+.container{
+    position: relative;
+    width: 95%;
+    margin: 100px auto 0;
+    height: auto;
+    display: grid; /**/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)  );
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+}
+
+.container .card{
+    position: relative;
+    background: #000;
+    width: 300px;
+    height: 400px;
+    margin:0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card:hover{  
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+}
+
+
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5;
+}
+
+.container .card:hover .img-box{
+    opacity: 1;
+}
+
+.container .card .img-box img{
+    width: 100%;    
+}
+
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    bottom: 0;
+}
+
+
+/*Color that each letter carries when passing it.*/
+
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg, #c21833, transparent);
+}
+
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg, #8012a5, transparent);
+}
+
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg, #3b72ca, transparent);
+}
+
+.container .card:nth-child(4) .content{
+    background: linear-gradient(0deg, #37AA61, transparent);
+}
+
+.container .card:nth-child(5) .content{
+    background: linear-gradient(0deg, #50B5B5, transparent);
+}
+
+.container .card:nth-child(6) .content{
+    background: linear-gradient(0deg, #A7330E, transparent);
+}
+.container .card:nth-child(7) .content{
+    background: linear-gradient(0deg, #CBE134, transparent);
+}
+.container .card:nth-child(8) .content{
+    background: linear-gradient(0deg, #6484A6, transparent);
+}
+.container .card:nth-child(9) .content{
+    background: linear-gradient(0deg, #2E5D5D, transparent);
+}
+.container .card:nth-child(10) .content{
+    background: linear-gradient(0deg, rgb(65, 18, 3), transparent);
+}
+.container .card:nth-child(11) .content{
+    background: linear-gradient(0deg, rgb(182, 78, 44), transparent);
+}
+
+.container .card:nth-child(12) .content{
+    background: linear-gradient(0deg, rgb(22, 53, 68), transparent);
+}
+
+.container .card:nth-child(13) .content{
+    background: linear-gradient(0deg, rgb(105, 80, 33), transparent);
+}
+
+.container .card:nth-child(14) .content{
+    background: linear-gradient(0deg, rgb(142, 213, 255), transparent);
+}
+
+.container .card:nth-child(15) .content{
+    background: linear-gradient(0deg, rgb(179, 150, 21), transparent);
+}
+
+.container .card:nth-child(16) .content{
+    background: linear-gradient(0deg, rgb(231, 186, 134), transparent);
+}
+
+.container .card:nth-child(17) .content{
+    background: linear-gradient(0deg, rgb(135, 219, 149), transparent);
+}
+
+.container .card:nth-child(18) .content{
+    background: linear-gradient(0deg, rgb(138, 216, 230), transparent);
+}
+
+.container .card:nth-child(19) .content{
+    background: linear-gradient(0deg, rgb(31, 109, 173), transparent);
+}
+
+.container .card:nth-child(20) .content{
+    background: linear-gradient(0deg, rgb(204, 104, 79), transparent);
+}
+
+
+
+
+
+
+/*size, color, margin of the letter of the cards*/
+.container .card .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .card .content h2 span{
+    color: #ffeb3b;
+    font-size: 16px;
+}
+
+.container .card .content  p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container .card .content ul{
+    display: flex;
+    margin: 20px 0 0 ;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card .content ul li {
+    list-style: none;
+}
+
+.container .card .content ul li a {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
